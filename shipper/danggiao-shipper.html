@@ -14,48 +14,54 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
         }
 
         body {
-            font-family: 'Montserrat Alternates', sans-serif;
-            background-color: #fffbf0; 
+            background-color: #FFF9E0; 
             color: #333;
         }
 
-        a {text-decoration: none; color: inherit; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
         ul { list-style: none; }
-        header {
-            width: 100%;
-        }
+        img { width: 100%; display: block; }
+
+        
+        header { width: 100%; }
 
         .top-bar {
-            background-color: #1e3d1a; 
+            background-color: #1e3d1a; /* Xanh rêu đậm */
             color: #bbb;
             font-size: 12px;
-            padding: 5px 10%;
+            padding: 6px 10%;
             display: flex;
             justify-content: flex-end;
-            gap: 20px;
+            gap: 25px;
         }
 
         .main-nav {
-            background-color: #265220; 
+            background-color: #265220; /* Xanh rêu sáng hơn */
             padding: 15px 10%;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-weight: 700;
-            text-transform: uppercase;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 40px;
+            align-items: center;
         }
 
-        .nav-links li a:hover, .nav-links li.active a {
-            color: #f4c430; 
+        .nav-links li a {
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .nav-links li a:hover, .nav-active {
+            color: #FFC107 !important; /* Màu vàng khi active */
         }
 
         .hero-banner {
@@ -461,13 +467,13 @@
         </div>
         <nav class="main-nav">
             <ul class="nav-links">
-                <li><a href="trangchu.html">ANH'VU</a></li>
-                <li><a href="trangchu.html">Trang chủ</a></li>
-                <li><a href="uudai.html">Ưu đãi</a></li>
-                <li><a href="sanpham.html">Sản phẩm</a></li>
-                <li><a href="hoso.html">Tài khoản</a></li>
+                <li><a href="trangchu-shipper.html">ANH'VU</a></li>
+                <li><a href="trangchu-shipper.html">Trang chủ</a></li>
+                <li><a href="uudai-shipper.html">Ưu đãi</a></li>
+                <li><a href="sanpham-shipper.html">Sản phẩm</a></li>
+                <li><a href="hoso-shipper.html">Tài khoản</a></li>
                 <li><a href="giohang.html">Giỏ hàng</a></li>
-                <li class="active"><a href="lichsu.html" style="color: #f4c430;">Đơn hàng</a></li>
+                <li class="active"><a href="lichsu-shipper.html" style="color: #f4c430;">Đơn hàng</a></li>
             </ul>
         </nav>
     </header>
